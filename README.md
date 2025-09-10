@@ -48,12 +48,14 @@ Follow these steps to set up and run the project.
 2. **Installation**
 
     1. **Clone the repository**:
+       
     ```bash
     git clone https://github.com/realearn-people/benchmarking-visual-reasoning.git
     cd benchmarking-visual-reasoning
     ```
 
     2. **Install the required Python packages:**
+       
     ```bash
     pip install python-dotenv scikit-learn google openai pandas ollama
     ```
@@ -65,7 +67,8 @@ Follow these steps to set up and run the project.
 
     2. **Create an environment file:**
     Create a file named `.env` in the root of the project and add your API keys. The `classifier-ollama.ipynb` does not require an API key.
-    ```bash
+
+    ```
     # .env file
     GOOGLE_API_KEY="google-api-key"
     OPENAI_API_KEY="openai-api-key"
@@ -76,6 +79,7 @@ Follow these steps to set up and run the project.
     1. Open the notebook corresponding to the provider you want to test. For example, `classifier-google.ipynb`.
 
     2. Configure the parameters in the main execution block near the end of the notebook:
+       
     ```bash
     # Select the model to use
     model = 'gemini-2.5-pro' # Or 'gpt-4o' for OpenAI, etc.
@@ -116,4 +120,5 @@ A CSV file will be created in the `results/` folder (e.g., `results/face_results
 **Metrics** (`.json`)
 
 A JSON file containing the full evaluation report will be created in the `metrics/` folder (e.g., `metrics/face_metrics_facs_gemini-2.5-pro_0_0.07.json`).
+
 
