@@ -48,14 +48,14 @@ Follow these steps to set up and run the project.
 2. **Installation**
 
     1. **Clone the repository**:
-       
+
     ```bash
     git clone https://github.com/realearn-people/benchmarking-visual-reasoning.git
     cd benchmarking-visual-reasoning
     ```
 
     2. **Install the required Python packages:**
-       
+
     ```bash
     pip install python-dotenv scikit-learn google openai pandas ollama
     ```
@@ -120,5 +120,6 @@ A CSV file will be created in the `results/` folder (e.g., `results/face_results
 **Metrics** (`.json`)
 
 A JSON file containing the full evaluation report will be created in the `metrics/` folder (e.g., `metrics/face_metrics_facs_gemini-2.5-pro_0_0.07.json`).
+
 
 
